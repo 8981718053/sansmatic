@@ -1,0 +1,5 @@
+# examples/life.sans
+DEFINE Concept "Life" AS {growth, replication, adaptation}
+
+# A canonical assertion with implicit proof obligation
+ASSERT (IF entity HAS {growth, replication, adaptation} THEN entity IS Life)
