@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it."
+title: "SANSMATIC"
+version: "0.1"
+date-released: "2025-08-28"
+authors:
+  - family-names: YourLastName
+    given-names: YourFirstName
