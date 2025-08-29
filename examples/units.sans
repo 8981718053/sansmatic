@@ -1,0 +1,2 @@
+DEFINE Concept "HasUnits" AS {unit}
+ASSERT (IF measure HAS {unit} THEN measure IS HasUnits)
