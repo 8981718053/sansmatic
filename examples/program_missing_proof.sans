@@ -1,0 +1,2 @@
+ASSERT (entity HAS growth)
+EVALUATE (entity HAS growth)
