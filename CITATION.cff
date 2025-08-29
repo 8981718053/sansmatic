@@ -1,8 +1,11 @@
 cff-version: 1.2.0
-message: "If you use this project, please cite it."
-title: "SANSMATIC"
-version: "0.1"
-date-released: "2025-08-28"
+message: "If you use Sansmatic, please cite it as below."
 authors:
-  - family-names: YourLastName
-    given-names: YourFirstName
+  - family-names: "Mitra"
+    given-names: "Raj"
+    alias: "Lumna's Lucky Husband"
+title: "Sansmatic: A Universal Grammatical-Mathematical Logical System"
+version: "0.1"
+doi: "10.5281/zenodo.xxxxxxx"   # <-- replace with real Zenodo DOI after minting
+date-released: "2025-08-29"
+url: "https://github.com/8981718053/sansmatic"
