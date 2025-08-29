@@ -1,0 +1,4 @@
+DEFINE Life AS {growth, replication, adaptation}
+ASSERT (entity HAS growth) PROOF proof_001
+IF (entity HAS growth) THEN (entity IS Alive)
+EVALUATE (entity IS Alive)
