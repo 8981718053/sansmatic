@@ -1,8 +1,3 @@
-# backup current interpreter
-cp sansmatic.py sansmatic.py.bak 2>/dev/null || true
-
-# write fixed interpreter
-cat > sansmatic.py <<'PY'
 #!/usr/bin/env python3
 import re, sys, os
 
@@ -129,19 +124,4 @@ if __name__ == "__main__":
         print("Usage: python sansmatic.py program.sans")
         sys.exit(1)
     run(sys.argv[1])
-PY
-
-# ensure proofs exist
-grep -qxF "proof_001" proofs.txt 2>/dev/null || echo proof_001 >> proofs.txt
-grep -qxF "proof_002" proofs.txt 2>/dev/null || echo proof_002 >> proofs.txt
-
-# create a canonical program to test (parentheses allowed or not)
-cat > program.sans <<'EOF'
-DEFINE Life AS {growth, replication, adaptation}
-ASSERT (entity HAS growth) PROOF proof_001
-IF (entity HAS growth) THEN (entity IS Alive)
-EVALUATE (entity IS Alive)
-EOF
-
-# run the test
-python sansmatic.py program.sans
+                  
