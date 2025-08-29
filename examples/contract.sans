@@ -1,0 +1,2 @@
+DEFINE Concept "Obligation" AS {party, action, deadline}
+ASSERT (IF deal HAS {party, action, deadline} THEN deal IS Obligation)
